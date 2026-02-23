@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniBrain", "UniBrain\UniBrain.csproj", "{0F563A12-835F-1621-E07B-27C4C7F6D229}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0F563A12-835F-1621-E07B-27C4C7F6D229}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F563A12-835F-1621-E07B-27C4C7F6D229}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F563A12-835F-1621-E07B-27C4C7F6D229}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F563A12-835F-1621-E07B-27C4C7F6D229}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {504D8F72-9B89-4B8E-BC27-B7ADF9118BE3}
+	EndGlobalSection
+EndGlobal

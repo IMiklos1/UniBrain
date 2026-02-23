@@ -24,7 +24,7 @@ namespace UniBrain
             builder.Services.AddCors(options =>
             {
                 options.AddPolicy("AllowReactDev",
-                    builder => builder.WithOrigins("http://localhost:5173") // Vite alapértelmezett port
+                    builder => builder.WithOrigins("http://localhost:5173", "http://localhost:5000") // Vite alapértelmezett port
                                       .AllowAnyMethod()
                                       .AllowAnyHeader());
             });
@@ -76,7 +76,7 @@ namespace UniBrain
             });
 
             app.MapGet("/api/subjects", async (AppDbContext db) =>
-                await db.Subjects.ToListAsync());
+                await db.Subjects.Include(s => s.Sessions).Include(s => s.Notes).ToListAsync());
 
             app.MapPost("/api/notes", async (AppDbContext db, Note note) =>
             {
